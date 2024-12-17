@@ -1,15 +1,20 @@
 #textthing{
-  font-size: 10vw;
-  font-family: "Monsieur La Doulaise", serif;
+    font-size: 10vw;
+    font-family: "Monsieur La Doulaise", serif;
+    text-align: center;
+    top: 40%;
+  }
+  #uhbody{
+    background-color: #6315f5;
+  }
+  #gxmes{
+    text-align: center;
+    font-family: "Open Sans", serif;
+    top: 20%;
+  }
+#quotes{
   text-align: center;
-  top: 40%;
-}
-#uhbody{
-  background-color: #6315f5;
-}
-#gxmes{
   font-family: "Open Sans", serif;
-  position: absolute;
-  top: 50%;
-  left: 47%;
+  top: 30%;
+  font-size: medium;
 }
