@@ -5,4 +5,3 @@ DISCLAIMER: I am not responsible for anything you do with this website.
 If you get in trouble, it's your responsibility. Use this only when allowed.
 
 Anyways, Have Fun!
-todo: add https://github.com/ylorant/splitty
