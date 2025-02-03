@@ -42,7 +42,7 @@ function downloadMainSave() {
 
   var fakeElement = document.createElement("a");
   fakeElement.href = dataURL;
-  fakeElement.download = "your.unbloxyes.save";
+  fakeElement.download = "gamesave.unbloxyes";
   fakeElement.click();
   URL.revokeObjectURL(dataURL);
 }
@@ -92,6 +92,7 @@ function uploadMainSave(key) {
         getMainSaveFromUpload(e.target.result);
       }
       $("#upload").text("Upload Successful!")
+      //alert("Upload Successful!")
       setTimeout(function() {
         $("#upload").text("Upload Save")
       }, 3000)
