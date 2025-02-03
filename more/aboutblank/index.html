@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h1>About Blank Injector</h1>
+        <h2>by <a href="https://github.com/penguinify"> penguinify</a> and funfunido</h2>  
+        <p>Enter raw JavaScript, or a website with the <b>https://</b> included and click Inject and it will inject it into an about:blank</p>
+        <p>Some websites will not allow you to iframe into them, so you can not inject them into the about:blank. <b>I cannot fix it.</b></p> 
+        <div>
+            <input type="text" id="jsweb" placeholder="Enter Website To Inject Here">
+            <button id="injectweb">Inject Website</button>
+            <!--<button id="inject_unbloxyes">Inject Unbloxyes</button>-->
+            <br>
+            <br>
+            <input type="text" id="js" placeholder="Enter JavaScript Code Here">
+            <button id="inject">Inject JavaScript</button>
+            <br>
+            <br>
+            <button id="inject_unbloxyes" class="unbloxthingbutton">Inject Unbloxyes</button>
+        </div>
+    </body>
+
+    <script>
+let inject_button = document.getElementById("inject");
+let inject_button_web = document.getElementById("injectweb");
+let url_input = document.getElementById("url"); 
+let js_input = document.getElementById("js");
+let js_web_input = document.getElementById("jsweb");
+let inject_unbloxyes = document.getElementById("inject_unbloxyes");
+
+inject_button.addEventListener("click", () => {
+    let js = js_input.value;
+    
+    
+    let win = window.open();
+    let script = win.document.createElement("script");
+    script.innerHTML = js;
+    win.document.body.appendChild(script);
+
+})
+
+inject_button_web.addEventListener("click", () => {
+    let jswebt = js_web_input.value;
+    
+    let js_part1 = "javascript:(function(){const iframe=document.createElement('iframe');iframe.src='"
+    let js_part2 = "';iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';document.body.appendChild(iframe);})();"
+    let final_thing = js_part1.concat(jswebt, js_part2);
+
+
+    let win = window.open();
+    let script = win.document.createElement("script");
+    script.innerHTML = final_thing;
+    win.document.body.appendChild(script);
+
+})
+
+inject_unbloxyes.addEventListener("click", () => {
+    let jswebt = js_web_input.value;
+    
+    let js_part1 = "javascript:(function(){const iframe=document.createElement('iframe');iframe.src='"
+    let js_part2 = "';iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';document.body.appendChild(iframe);})();"
+    let final_thing = js_part1.concat(jswebt, js_part2);
+    let thewholeencheleade = "javascript:(function(){const iframe=document.createElement('iframe');iframe.src='https://unbloxyes.vercel.app';iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';document.body.appendChild(iframe);})();"
+
+    let win = window.open();
+    let script = win.document.createElement("script");
+    script.innerHTML = thewholeencheleade;
+    win.document.body.appendChild(script);
+
+})
+
+    </script>
+
+
+    <style>
+        .unbloxthingbutton {
+            padding: 12px 28px;
+        }
+
+    </style>
+</html>
