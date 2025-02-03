@@ -2,6 +2,10 @@
 <html>
     <head>
         <title>Lyrics For Take On Me</title>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+		    <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js "></script>
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
@@ -49,9 +53,10 @@
           </div>
         <p id="textthing">all gxmes</p>
 
-        <h2 id="titletext">gxmes</h2>
+        <h2 id="titletext">gxmes --scroll down!</h2>
         <button onclick="downloadMainSave()">Download Game Save</button>
         <br>
+        <input class="hiddenUpload" type="file" accept=".save" hidden />
         <button onclick="uploadMainSave()">Upload Game Save</button>
         <br>
         <br>
@@ -115,12 +120,18 @@
               <br>
           </a>
         </div>
+        <div id="gamecontainer">
+          <a href="/gxmes/2048/index.html">
+              <h3 id="gametext">2048</h3>
+              <br>
+          </a>
+        </div>
 
 
         <style>
 
             #gametext {
-                color: #e14305;
+                color: #eb0707;
             }
 
             #titletext {

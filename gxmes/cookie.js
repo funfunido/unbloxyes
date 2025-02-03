@@ -36,12 +36,13 @@ function getMainSave() {
 
 // Function to download the main save data as a file
 function downloadMainSave() {
+  //alert("attempt")
   var data = new Blob([getMainSave()]);
   var dataURL = URL.createObjectURL(data);
 
   var fakeElement = document.createElement("a");
   fakeElement.href = dataURL;
-  fakeElement.download = "your.selenite.save";
+  fakeElement.download = "your.unbloxyes.save";
   fakeElement.click();
   URL.revokeObjectURL(dataURL);
 }
@@ -69,6 +70,7 @@ function getMainSaveFromUpload(data, key) {
 
 // Function to handle the file upload
 function uploadMainSave(key) {
+  //alert("attempt upload")
   var hiddenUpload = document.querySelector(".hiddenUpload");
   hiddenUpload.click();
 
