@@ -60,16 +60,16 @@ inject_button_web.addEventListener("click", () => {
 })
 
 inject_unbloxyes.addEventListener("click", () => {
-    let jswebt = js_web_input.value;
+   // let jswebt = js_web_input.value;
     
+    let browser_origin = window.location.origin;
     let js_part1 = "javascript:(function(){const iframe=document.createElement('iframe');iframe.src='"
     let js_part2 = "';iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';document.body.appendChild(iframe);})();"
-    let final_thing = js_part1.concat(jswebt, js_part2);
-    let thewholeencheleade = "javascript:(function(){const iframe=document.createElement('iframe');iframe.src='https://unbloxyes.vercel.app';iframe.style.position='fixed';iframe.style.top='0';iframe.style.left='0';iframe.style.width='100%';iframe.style.height='100%';iframe.style.border='none';iframe.style.zIndex='9999';document.body.appendChild(iframe);})();"
+    let final_thing = js_part1.concat(browser_origin, js_part2);
 
     let win = window.open();
     let script = win.document.createElement("script");
-    script.innerHTML = thewholeencheleade;
+    script.innerHTML = final_thing;
     win.document.body.appendChild(script);
 
 })
