@@ -65,6 +65,12 @@
     <script>
         const quotes = ["yoyoyo, whaz up my g", "MUSTAAAAAAAAAAAAAAAAAAARD", "They not like us", "Pizza", "If you see this message, JavaScript is turned on", "JQuery on top", "Meow", "lol", "Edgar rework", "free money just click link in description", "that feeling when brain surgery is tomorrow", "no Node.js on top", "man, i can't think of funny quotes", "how does a computer say hello? blello!", "yoyo", "how 2 make comment 101: first, make quotation mark, then add comma for another one, that simple", "did you know, there are exactly 802 quotes in here? note: this is a lie", "Ü", "〈", "洮", "", "鴶", "day 492 of smashing until sonic 7 comes out", "making these quotes is getting boring. i'm the quote guy. HE never lets me go outside. OH SHOOT HES COMINGsiopadfjhoasdpjfop jsapfpasjfas", "mom says if i dont stop making these quotes she'll bang my face on the keyboardadjfioadskjladfskjadfsijosghiadfsihgihjgsbijgsi", "]", "{}", "fun", "you have been gnomed", "goofy ahh,", "trojian d. eaxe had been in staleed on copmuter"];
         $('#quotes').text(quotes[Math.floor(Math.random() * quotes.length)]);
+
+
+        const url = new URL(window.location.href);
+        const subdomain = url.hostname.replace(/^www\./, '').split('.')[0];
+        //alert(subdomain);
+        $("#textthing").text(subdomain)// changes unbloxyes to any variations of it
     </script>
     </div>
     </body>
