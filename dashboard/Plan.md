@@ -13,3 +13,5 @@ and topbar:
 I think we sould have a side bar, but more rounded
 
 Sources being documentaton site for nebula, [Home Page](https://docs.nebulaproxy.io/en) for top bar, and [Docs page](https://docs.nebulaproxy.io/en/docs/NebulaWeb/marketplace)
+
+also should we consider this [AI](https://github.com/AI-QL/chat-ui/blob/main/index.html)? It is dowloadable as a plain html file and works well.
