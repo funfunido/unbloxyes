@@ -3,6 +3,13 @@
 This has ideas and plans for unbloxyes!(p.s. unbloxyes stands for Unblocked proxy, and games unbl for [unbl]ocked oxy for pr[oxy] and es for gam[es]
 Like Car axle, we want it to be a file, with links to proxys, and games, along with bypassing methods, also it should have a good desgin
 
+> [!NOTE]
+> also should we consider this [AI](https://github.com/AI-QL/chat-ui/blob/main/index.html)? It is dowloadable as a plain html file and works well.
+
+>[!WARNING]
+>The AI would be super easy to leak make sure this does not happen
+
+
 ## Desgin ideas
 
 Idea for sidebar:
@@ -16,8 +23,6 @@ and topbar:
 I think we sould have a side bar, but more rounded
 
 Sources being documentaton site for nebula, [Home Page](https://docs.nebulaproxy.io/en) for top bar, and [Docs page](https://docs.nebulaproxy.io/en/docs/NebulaWeb/marketplace)
-
-also should we consider this [AI](https://github.com/AI-QL/chat-ui/blob/main/index.html)? It is dowloadable as a plain html file and works well.
 
 ## Section ideas:
 - Proxy - top nav bar
