@@ -22,14 +22,14 @@ also should we consider this [AI](https://github.com/AI-QL/chat-ui/blob/main/ind
 ## Section ideas:
 - Proxy - top nav bar
 - Games - side nav bar with search: Likely all new gitlab selinite games
-- Settings - with side nav bar: themes, proxy types, tab name/favicon, eject as about:blank or blob, dev mode activation(for devs like us), etc.
+- Settings - with side nav bar: themes, proxy types, tab name/favicon, eject as about:blank or blob, dev mode activation(for devs like us), shorcut settings, panic key etc.
 - Credits - because
 - Eject page into about:blank or blob - for people to use their own unblocked websites,
-- Feedback - for suggestions so we know what to improve on, and waht to add - use google forms for this
+- Feedback - for suggestions so we know what to improve on, and what to add - use google forms for this
 
 Future section ideas:
-- AI - found a dowlable plain html file for an AI that works, just wondering if people would use this on things that could get them in serious trouble, (think we could just put a disclaimer like - we are not responsible for how you use this and the consequnces of such - or something like that, but still should be considered )
-- Plugins? - I mean like if we gett a lot of good sugestiosn that increase the file size by a lot then we should add this to keep the file small for when people download it.
+- AI - found a downloadle plain html file for an AI that works, just wondering if people would use this on things that could get them in serious trouble, (think we could just put a disclaimer like - we are not responsible for how you use this and the consequnces of such - or something like that, but still should be considered )
+- Plugins? - I mean like if we get a lot of good sugestions that increase the file size by a lot then we should add this to keep the file small for when people download it.
   
 
 
